@@ -15,14 +15,14 @@
 void	ft_strlcat(char *dst, char src, size_t dstsize)
 {
 	size_t	len_dst;
-	size_t	len_src;
-	size_t	new_len;
+	// size_t	len_src;
+	// size_t	new_len;
 
-	len_src = 1;
+	// len_src = 1;
 	len_dst = ft_strlen(dst);
-	new_len = len_src + dstsize;
-	if (dstsize > len_dst)
-		new_len = len_src + len_dst;
+	// new_len = len_src + dstsize;
+	// if (dstsize > len_dst)
+	// 	new_len = len_src + len_dst;
 	while ((len_dst + 1) < dstsize)
 	{
 		dst[len_dst] = src;

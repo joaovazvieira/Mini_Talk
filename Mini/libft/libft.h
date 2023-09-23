@@ -17,14 +17,6 @@
 # include <unistd.h>
 # include <stdbool.h>
 
-int			ft_atoi(const char *str);
-void		ft_putstr_fd(char *s, int fd);
-void		ft_putchar_fd(char c, int fd);
-void		ft_putnbr_fd(int n, int fd);
-void		ft_strlcpy(char *dst, const char *src, size_t dstsize);
-void		ft_strlcat(char *dst, char src, size_t dstsize);
-size_t		ft_strlen(const char *s);
-
 typedef struct s_vector
 {
 	int		size;
@@ -32,6 +24,13 @@ typedef struct s_vector
 	char	*str;
 }				t_vector;
 
+int			ft_atoi(const char *str);
+void		ft_putstr_fd(char *s, int fd);
+void		ft_putchar_fd(char c, int fd);
+void		ft_putnbr_fd(int n, int fd);
+void		ft_strlcpy(char *dst, const char *src, size_t dstsize);
+void		ft_strlcat(char *dst, char src, size_t dstsize);
+size_t		ft_strlen(const char *s);
 int			ft_appendchar(t_vector *buff, char new_char);
 
 #endif

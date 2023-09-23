@@ -8,10 +8,10 @@ CFLAGS = -Wall -Werror -Wextra
 all: libft server client
 
 server: server.o
-		$(CC) $(CFLAGS) libft/libft.a -o $@ $<
+		$(CC) $(CFLAGS) -o $@ $< libft/libft.a
 
 client: client.o
-		$(CC) $(CFLAGS) libft/libft.a -o $@ $<
+		$(CC) $(CFLAGS) -o $@ $< libft/libft.a 
 
 %.o: %.c 
 	$(CC) -c $(CFLAGS) -o $@ $<

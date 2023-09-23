@@ -12,7 +12,7 @@
 
 #include <signal.h>
 #include <stdio.h>
-#include "libft/libft.h"
+#include "./libft/libft.h"
 
 static void	extra_action(siginfo_t *info, t_vector *temp)
 {
